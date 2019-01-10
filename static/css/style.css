@@ -222,6 +222,9 @@ strong {
 .card-text {
     margin: 1em 0;
     line-height: 1.5;
+  overflow:hidden;
+  max-height: 4.5em;
+  text-overflow: ellipsis;
 }
 .card-subtext {
     display: flex;
