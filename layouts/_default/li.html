@@ -1,10 +1,8 @@
 <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
   href="{{ .Permalink }}" class="card blog-card" rel="bookmark" >
-    {{ if isset .Params "featuredimage" }}
     <div class="card-img-container">
       <img src="https://img.youtube.com/vi/{{.Params.youtubeid}}/default.jpg" class="card-img" />
     </div>
-    {{ end }}
   <article class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
     <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}</p>
